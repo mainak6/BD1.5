@@ -9,7 +9,8 @@ app.use(express.static('static'));
 app.get('/cart-total', (req, res) => {
   let newItemPrice = parseFloat(req.query.newItemPrice);
   let cartTotal = parseFloat(req.query.cartTotal);
-  res.send((newItemPrice + cartTotal).toString());
+  let total;
+  res.send(total= (newItemPrice + cartTotal).toString());
 });
 
 app.get('/membership-discount', (req, res) => {
